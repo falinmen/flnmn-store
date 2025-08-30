@@ -13,7 +13,7 @@ repo: https://github.com/JustArchiNET/ArchiSteamFarm
 support: https://github.com/JustArchiNET/ArchiSteamFarm/wiki
 port: 1260
 gallery:
-  - https://github.com/falinmen/sparkles/blob/main/sparkles-asf/12.jpg
+  - https://raw.githubusercontent.com/falinmen/flnmn-store/refs/heads/main/flnmn-asf/12.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
