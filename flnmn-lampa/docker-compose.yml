@@ -1,0 +1,18 @@
+version: '3.3'
+services:
+    torrserver:
+        image: immisterio/lampac
+        container_name: lampac
+        environment:
+            - TS_PORT=9118
+            - TS_DONTKILL=1
+            - TS_HTTPAUTH=0
+            - TS_CONF_PATH=/opt/ts/config
+            - TS_TORR_DIR=/opt/ts/torrents
+        volumes:
+            - './CACHE:/opt/ts/torrents'
+            - './CONFIG:/opt/ts/config'
+        ports:
+            - '9118:9118'
+        restart: always
+        network_mode: "host"
