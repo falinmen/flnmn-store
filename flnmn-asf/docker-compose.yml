@@ -4,16 +4,16 @@ services:
     image: justarchi/archisteamfarm:latest
     container_name: flnmn-asf
     ports:
-      - "1242:1242"   # веб-интерфейс ASF
+      - "1242:1242"
     volumes:
       - ./data/config:/app/config:Z
       - ./data/plugins:/app/plugins:Z
     environment:
       - TZ=UTC
-      - IPC=1                     # включаем веб-интерфейс
-      - IPC_BIND=0.0.0.0          # слушаем все интерфейсы
-      - IPC_PORT=1242             # используем 1242
-      - IPC_PASSWORD=asf123       # пароль для входа в UI
+      - IPC=1
+      - IPC_BIND=0.0.0.0     # <-- важно! слушаем все интерфейсы
+      - IPC_PORT=1242
+      - IPC_PASSWORD=asf123
     restart: unless-stopped
     networks:
       - umbrel_main_network
