@@ -18,4 +18,4 @@ services:
       - umbrel_main_network
 
 networks:
-  umbrel_main_network: true
+  umbrel_main_network: false
