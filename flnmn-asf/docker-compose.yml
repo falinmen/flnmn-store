@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   archisteamfarm:
-    image: justarchi/archisteamfarm:latest
+    image: JustArchiNET/ASF-ui:latest
     container_name: flnmn-asf
     ports:
       - "1242:1242"
