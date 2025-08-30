@@ -1,0 +1,14 @@
+version: '3.3'
+services:
+    torrserver:
+        image: immisterio/lampac
+        container_name: lampac
+        environment:
+            - TS_PORT=9118
+            - TS_DONTKILL=1
+            - TS_HTTPAUTH=0
+           
+        ports:
+            - '9118:9118'
+        restart: always
+        network_mode: "host"
