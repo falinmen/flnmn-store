@@ -6,18 +6,16 @@ services:
     ports:
       - "1242:1242"
     volumes:
-      - ./data/config:/app/config:Z
-      - ./data/plugins:/app/plugins:Z
+      - /flnmn-asf/config:/app/config
+      - /flnmn-asf/plugins:/app/plugins
     environment:
       - TZ=UTC
       - IPC=1
-      - IPC_BIND=192.168.0.193
+      - IPC_BIND=0.0.0.0
       - IPC_PORT=1242
-      - IPC_PASSWORD=asf123
     restart: unless-stopped
     networks:
       - umbrel_main_network
 
 networks:
   umbrel_main_network:
-    external: true
