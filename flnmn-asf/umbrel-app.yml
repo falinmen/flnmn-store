@@ -12,7 +12,7 @@ website: https://github.com/JustArchiNET/ArchiSteamFarm
 dependencies: []
 repo: https://github.com/JustArchiNET/ArchiSteamFarm
 support: https://github.com/JustArchiNET/ArchiSteamFarm/wiki
-port: 1260
+port: 1242
 gallery:
   - https://raw.githubusercontent.com/falinmen/flnmn-store/refs/heads/main/flnmn-asf/12.jpg
 path: ""
