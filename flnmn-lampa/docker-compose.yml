@@ -1,8 +1,0 @@
-version: '3.5'
-
-services:
-  psql:
-    image: gentslava/lampa
-    restart: always
-    ports:
-      - "5440:5440"
