@@ -11,7 +11,7 @@ services:
     environment:
       - TZ=UTC
       - IPC=1
-      - IPC_BIND=0.0.0.0     # <-- важно! слушаем все интерфейсы
+      - IPC_BIND=192.168.0.193
       - IPC_PORT=1242
       - IPC_PASSWORD=asf123
     restart: unless-stopped
