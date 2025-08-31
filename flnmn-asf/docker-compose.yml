@@ -10,7 +10,4 @@ services:
       - /flnmn-asf/plugins:/app/plugins
     environment:
       - TZ=UTC
-      - IPC=1
-      - IPC_BIND=0.0.0.0
-      - IPC_PORT=1242
     restart: unless-stopped
