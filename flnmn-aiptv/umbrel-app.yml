@@ -2,7 +2,7 @@ manifestVersion: 1
 id: flnmn-aiptv
 name: Aiptv
 tagline: Stream IPTV - M3U Proxy Server
-icon: https://jakubmedia.com/umbrel/aiptv.png
+icon: https://i.postimg.cc/GtspK3W9/screen-0.jpg
 category: marciasmedia
 version: "free"
 port: 51976
