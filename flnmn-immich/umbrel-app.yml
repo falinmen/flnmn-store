@@ -3,6 +3,7 @@ id: flnmn-immich
 category: files
 name: Immich
 version: "v1.139.4"
+icon: https://i.postimg.cc/HsftNYBQ/photos.png
 tagline: High-performance photo and video backup solution
 description: >-
   An open-source and high-performance self-hosted backup solution for the videos and photos on your mobile device
