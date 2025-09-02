@@ -2,7 +2,7 @@ manifestVersion: 1
 id: flnmn-it-tools
 name: IT Tools
 tagline: Narzędzie dla informatyków
-icon: https://jakubmedia.com/umbrel/it-tools.png
+icon: https://i.postimg.cc/tC15DZtq/settings.png
 category: marciasmedia
 version: "1.0.0"
 port: 8080
