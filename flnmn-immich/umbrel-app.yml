@@ -1,7 +1,7 @@
 manifestVersion: 1.1
-id: immich
+id: flnmn-immich
 category: files
-name: flnmn-Immich
+name: Immich
 version: "v1.139.4"
 tagline: High-performance photo and video backup solution
 description: >-
