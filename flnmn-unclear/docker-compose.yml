@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  nuclear:
+    image: jlesage/baseimage-gui:ubuntu-20.04
+    container_name: flnmn-nuclear
+    restart: unless-stopped
+    environment:
+      - USER_ID=1000
+      - GROUP_ID=1000
+      - TZ=Europe/Moscow
+    volumes:
+      - ./config:/config:rw
+      - ./downloads:/downloads:rw
+    ports:
+      - "5800:5800"   # Web GUI (через браузер, http://localhost:5800)
+      - "5900:5900"   # VNC клиент
+    command: >
+      bash -c "
+        apt-get update &&
+        apt-get install -y git npm nodejs &&
+        git clone https://github.com/nukeop/nuclear.git /tmp/nuclear &&
+        cd /tmp/nuclear &&
+        npm install &&
+        npm start
+      "
