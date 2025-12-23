@@ -5,7 +5,7 @@ tagline: An open-source synchronization server for Joplin
 icon: https://raw.githubusercontent.com/dennysubke/dennys-umbrel-app-gallery/main/denny-joplin/logo.png
 category: files & productivity
 version: "3.0.1"
-port: 22300
+port: 22301
 description: >-
     Joplin Sync Server is an open-source synchronization server for Joplin, the popular note-taking and to-do application.
     
