@@ -1,0 +1,59 @@
+version: "3"
+name: "Joplin Server"
+id: flnmn-joplin
+description: "Сервер для синхронизации заметок Joplin"
+version: "1.0.0"
+author: "Community"
+website: "https://joplinapp.org"
+icon: "https://joplinapp.org/images/joplin-logo.svg"
+category: "Productivity"
+tags:
+  - productivity
+  - notes
+  - sync
+  - selfhosted
+ports:
+  - internal: 22300
+    external: 22300
+    description: "Joplin Server API"
+volumes:
+  - name: "joplin-data"
+    path: "/data/joplin"
+    description: "Данные сервера Joplin"
+env:
+  - name: "APP_BASE_URL"
+    value: "https://{{umbrel-hostname}}/joplin"
+    description: "URL для доступа к серверу"
+  - name: "APP_PORT"
+    value: "22300"
+    description: "Порт сервера"
+  - name: "DB_CLIENT"
+    value: "sqlite"
+    description: "Тип базы данных"
+  - name: "DB_NAME"
+    value: "joplin.sqlite"
+    description: "Имя файла базы данных"
+  - name: "DB_FILENAME"
+    value: "/data/joplin/joplin.sqlite"
+    description: "Путь к файлу базы данных"
+  - name: "APP_BASE_DIR"
+    value: "/data/joplin"
+    description: "Рабочая директория"
+  - name: "APP_ADMIN_PASSWORD"
+    value: "admin"
+    description: "Пароль администратора (смените после установки!)"
+  - name: "APP_ADMIN_EMAIL"
+    value: "admin@example.com"
+    description: "Email администратора"
+  - name: "APP_LOG_LEVEL"
+    value: "info"
+    description: "Уровень логов"
+  - name: "APP_DISABLE_REGISTRATION"
+    value: "true"
+    description: "Отключить регистрацию новых пользователей"
+  - name: "APP_ENABLE_CORS"
+    value: "true"
+    description: "Включить CORS"
+  - name: "APP_ENABLE_EMAIL"
+    value: "false"
+    description: "Включить email-уведомления"
